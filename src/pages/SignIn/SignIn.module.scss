@@ -1,0 +1,69 @@
+.signIn {
+  display: flex;
+  justify-content: center;
+  margin-top: 180px;
+
+  .signInForm {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    padding: 100px 120px;
+    border-radius: 10px;
+
+    form {
+      text-align: center;
+
+      .inputs {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .buttonPanel {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .btn {
+          cursor: pointer;
+          padding: 16px;
+          width: 100%;
+          margin: 0 auto;
+          background-color: #c5d0fc;
+          border-radius: 10px;
+          font-size: 19px;
+
+          &:active {
+            background-color: #fff;
+            color: #c5d0fc;
+          }
+          &:disabled {
+            opacity: .7;
+            cursor: not-allowed;
+            &:active {
+              background-color: inherit;
+              color: inherit;
+            }
+          }
+        }
+
+        .newAcc {
+          font-size: 15px;
+          margin: 12px auto 0;
+
+          .active {
+            color: darken(#A4BCFD, 30%);
+
+            &:active {
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+  }
+}
